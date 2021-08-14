@@ -13,6 +13,10 @@ body {
   width: 825px;
   margin: 50px auto;
   position: relative;
+  /* CSS GRID */
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
 }
 
 .product::before {
@@ -27,21 +31,6 @@ body {
   font-size: 12px;
   letter-spacing: 2px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-/* .clearfix::after {
-  clear: both;
-  display: block;
-  content: "";
-} */
-
-/* .product-img {
-} */
-
-.container {
-  display: flex;
-  flex: 1;
-  gap: 40px;
 }
 
 .prod-price-shipping {
@@ -59,6 +48,8 @@ body {
   font-size: 24px;
   background-color: #f7f7f7;
   padding: 20px;
+
+  grid-column: 1 / -1;
 }
 
 .price {
@@ -129,6 +120,8 @@ body {
   cursor: pointer;
   width: 100%;
   padding: 20px;
+
+  grid-column: 1 / -1;
 }
 .add-cart-button:hover {
   background-color: #fff;
